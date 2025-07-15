@@ -7,11 +7,6 @@ pipeline{
 	}
 
 	stages{
-		stage('Checkout'){
-			steps{
-				git 'https://github.com/orvencasido/ci-cd-node-app.git'
-			}
-		}
 		stage('Install Dependencies'){
 			steps{
 				sh 'npm install'
